@@ -1,0 +1,14 @@
+Q-1. Write an SQL query to fetch intersecting records of two tables.
+
+Ans :
+		Select * From Table1 Inner Join Table2 on Table1.Id = Table2.Id;
+
+		
+Q-2. Write an SQL query to show records from one table that another table does not have.
+
+Ans :
+		Select * From Table1 Outer Join Table2 on Table1.Id = Table2.Id ;
+		
+		minus
+		
+		Select * From Table1 Inner Join Table2 on Table1.Id = Table2.Id;

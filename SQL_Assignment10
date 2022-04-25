@@ -1,0 +1,15 @@
+Q-1. Write an SQL query to determine the 5th highest salary without using TOP or limit method.
+
+Ans :
+		Select * From Worker Order By Salary Desc Rownum <= 5;
+		
+		minus
+		
+		Select * From Worker Order By Salary Desc Rownum <= 4;
+		
+		
+Q-2. Write an SQL query to fetch the list of employees with the same salary.
+
+Ans :
+		Select * From Employees Group By Salary Desc;
+		
